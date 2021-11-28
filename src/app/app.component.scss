@@ -1,7 +1,8 @@
 .btn {
+    margin: 30px;
     border: 2px solid #000;
     background-color: rgba(39, 141, 48, 1);
-    width: 100px;
+    width: 200px;
     height: 50px;
     font-size: 1.5rem;
     transition: 1s;
@@ -9,4 +10,19 @@
         cursor: pointer;
         background-color: rgba(39, 141, 48, 0.7); 
     }
+}
+
+.count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+ul {
+    background-color: rgb(172, 176, 179);
 }

@@ -1,0 +1,13 @@
+<p class="textStyles">{{ childItem }}</p>
+
+<div class="container">
+<label class = textStyles for="item-input">Add an item:</label>
+<input type="text" id="item-input" placeholder="Enter here something and press the button" #newItem>
+<button class="btn-out" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+</div>
+
+<div class="container">
+    <button class="btn-twB" (click)="dec()">-</button>
+    <button class="btn-twB" (click)="inc()">+</button>
+    <span [style.font-size.px]="size">FontSize: {{size}} px - Two-way binding</span>
+</div>

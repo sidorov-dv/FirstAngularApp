@@ -1,3 +1,10 @@
-<button class="btn" (click) = "onChange()">Submit</button>
+<button class="btn" (click) = "onClickBtn()">Submit</button>
+<div class="count"><span>{{ counter }}</span></div>
+
+<app-first-child [childItem] = "parItem" (itemEvent) = "addItem($event)" [(size)]="fontSizePx"></app-first-child>
+<!-- <div [style.font-size.px]="fontSizePx">Resizable Text</div> -->
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
 
 <!-- <router-outlet></router-outlet> -->

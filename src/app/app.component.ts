@@ -6,10 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'MyFirstApp';
-  
-  onChange () {
-    console.log(`Click on button`);
 
+  title = 'MyFirstApp';
+  counter = 0; 
+  parItem = 'This text from parent element to child element';
+  fontSizePx = 16;
+
+  items: string[] = [];
+  addItem(newItem: string) {
+    this.items.push(newItem);
+  }
+  
+  onClickBtn (): number {
+     console.log(`Click on button`);
+     return this.counter++
   }
 }
