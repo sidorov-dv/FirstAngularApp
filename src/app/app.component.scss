@@ -1,12 +1,12 @@
 .btn {
     border: 2px solid #000;
-    background-color: rgb(39, 141, 48);
+    background-color: rgba(39, 141, 48, 1);
     width: 100px;
     height: 50px;
     font-size: 1.5rem;
     transition: 1s;
     &:hover {
         cursor: pointer;
-        opacity: 0.7; 
+        background-color: rgba(39, 141, 48, 0.7); 
     }
 }
